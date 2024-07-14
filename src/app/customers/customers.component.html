@@ -1,0 +1,35 @@
+
+<div class="content">
+  
+  <div class="mb-3  m-auto col-md-6 pt-5 ">
+   
+    <input [(ngModel)]="inputSearch" type="text" class="form-control " id="" placeholder="Search">
+   
+  </div>
+  
+  <div class="container w-100 m-auto py-4  ">
+    <table class="table table-striped text-center ">
+      <thead>
+        <th >Name</th>
+        <th>TransactionDate</th>
+        <th>TransactionAmount</th>
+      </thead>
+      <tbody>
+        <tr *ngFor="let customer of CustomerTransaction | search:inputSearch " >
+          <td>{{customer.name}}</td>
+          <td>{{customer.date}}</td>
+          <td>{{customer.amount}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
+
+
+  
+
+
+
+

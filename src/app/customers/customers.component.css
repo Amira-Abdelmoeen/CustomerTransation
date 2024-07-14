@@ -1,0 +1,10 @@
+.content{
+    background-image: url("../../assets/bg1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+ 
+}
+thead th{
+    color: #ec700a;
+    font-size: 22px;
+}
