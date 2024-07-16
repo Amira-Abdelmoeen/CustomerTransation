@@ -11,7 +11,7 @@ export class SearchPipe implements PipeTransform {
     {
       return Customers
     }
-    return Customers.filter( (item)=>item.name.includes(term.toLowerCase()) ||item.amount.toString().includes(term) ) 
+    return Customers.filter( (item)=>item.name.toLowerCase().includes(term.toLowerCase()) ||item.amount.toString().includes(term) ) 
     
   }
   
